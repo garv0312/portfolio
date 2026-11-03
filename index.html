@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garv Raj Shukla | Data Analyst</title>
+  <meta name="description" content="Portfolio of Garv Raj Shukla, a data analyst and computer science undergraduate who turns messy data into decisions with SQL, Power BI, and AI-assisted development.">
+  <meta name="author" content="Garv Raj Shukla">
+  <meta property="og:title" content="Garv Raj Shukla | Data Analyst">
+  <meta property="og:description" content="Data analyst who turns messy data into decisions, using SQL, Power BI and AI-assisted development.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%93%8A%3C/text%3E%3C/svg%3E">
+  <script>document.documentElement.classList.remove("no-js");</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="nav-brand" href="#top">Garv Raj Shukla</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-copy">
+          <h1 id="hero-title" class="hero-item">Garv Raj Shukla</h1>
+          <p class="headline hero-item">Data analyst who turns messy data into decisions, using SQL, Power BI and AI-assisted development.</p>
+          <p class="sub hero-item">Computer Science undergraduate, Indore, Madhya Pradesh</p>
+          <div class="hero-actions hero-item">
+            <div class="btn-row">
+              <a class="btn btn-primary" href="#projects">View projects <span class="arrow" aria-hidden="true">&rarr;</span></a>
+              <a class="btn" href="Garv_Shukla_Resume.pdf" download>Download resume <span class="arrow" aria-hidden="true">&rarr;</span></a>
+              <a class="btn" href="#contact">Contact <span class="arrow" aria-hidden="true">&rarr;</span></a>
+            </div>
+            <p class="social">
+              <a href="https://github.com/garv0312/">GitHub</a>
+              <span aria-hidden="true">/</span>
+              <a href="https://www.linkedin.com/in/garv-shukla/">LinkedIn</a>
+            </p>
+          </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section wrap" aria-labelledby="about-title">
+      <h2 id="about-title" class="reveal">About</h2>
+      <p class="about-copy reveal">Computer Science undergraduate with strong foundations in Python, Java, SQL and JavaScript, and in data analytics with Power BI and Excel. I build analysis projects and full-stack apps using AI-assisted development and prompt engineering, while owning the requirements, architecture and review myself.</p>
+      <ul class="highlights reveal">
+        <li><strong>SQL and Power BI</strong><span>Shared metrics, dashboards, and weekly reviews</span></li>
+        <li><strong>Python</strong><span>pandas analysis and a read-only SQL agent</span></li>
+        <li><strong>AI-assisted build</strong><span>I keep requirements, architecture, and review</span></li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section wrap" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="reveal">Projects</h2>
+
+      <!-- Project: Olist WBR Command Center -->
+      <article class="project reveal">
+        <p class="kicker">Data Analytics</p>
+        <h3>Olist WBR Command Center</h3>
+        <p class="summary">Weekly review of delivery performance and review scores for about 96K delivered orders.</p>
+        <div class="shot-grid">
+          <figure class="shot">
+            <img src="images/olist-executive.png" width="1346" height="809" alt="Power BI executive weekly review showing 96K orders, revenue, and a 93.23 percent on-time rate">
+            <figcaption>Executive weekly review</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/olist-delivery.png" width="1335" height="747" alt="Power BI delivery view: late orders average 2.27 stars and on-time orders average 4.29">
+            <figcaption>Delivery and review scores</figcaption>
+          </figure>
+        </div>
+        <dl class="case">
+          <div>
+            <dt>Problem</dt>
+            <dd>Build a weekly business review for an e-commerce business using the Olist dataset (~96K delivered orders).</dd>
+          </div>
+          <div>
+            <dt>Approach</dt>
+            <dd>Shared metric definitions across PostgreSQL, Python, Excel and Power BI. Built a read-only SQL agent in Python (Groq/Gemini LLM) that drafts SELECT-only queries, validates them with sqlparse, runs them under a read-only database role with query logging, and checks generated commentary against computed figures.</dd>
+          </div>
+          <div>
+            <dt>Result</dt>
+            <dd>Late deliveries averaged a 2.27 review score vs 4.29 on time (62% vs 9% low-star share).</dd>
+          </div>
+        </dl>
+
+        <div class="stats" data-stats>
+          <div class="stat-pair">
+            <p class="stat-kicker">Average review score</p>
+            <div class="bar-line">
+              <span class="stat-num" data-count="2.27" data-decimals="2">2.27</span>
+              <div class="bar" role="img" aria-label="Late delivery, 2.27 out of 5">
+                <span class="bar-fill" style="--target: 0.454"></span>
+              </div>
+              <span class="bar-name">Late delivery</span>
+            </div>
+            <div class="bar-line">
+              <span class="stat-num" data-count="4.29" data-decimals="2">4.29</span>
+              <div class="bar" role="img" aria-label="On time, 4.29 out of 5">
+                <span class="bar-fill" style="--target: 0.858"></span>
+              </div>
+              <span class="bar-name">On time</span>
+            </div>
+          </div>
+          <div class="stat-pair">
+            <p class="stat-kicker">Low-star share</p>
+            <div class="bar-line">
+              <span class="stat-num" data-count="62" data-decimals="0" data-suffix="%">62%</span>
+              <div class="bar" role="img" aria-label="Late delivery, 62 percent low-star share">
+                <span class="bar-fill" style="--target: 0.62"></span>
+              </div>
+              <span class="bar-name">Late delivery</span>
+            </div>
+            <div class="bar-line">
+              <span class="stat-num" data-count="9" data-decimals="0" data-suffix="%">9%</span>
+              <div class="bar" role="img" aria-label="On time, 9 percent low-star share">
+                <span class="bar-fill" style="--target: 0.09"></span>
+              </div>
+              <span class="bar-name">On time</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal" data-terminal role="region" aria-label="SQL agent demo. Query: SELECT review_score, COUNT(*) FROM orders GROUP BY 1; Status: validated with sqlparse, read-only role, logged.">
+          <p class="terminal-label">SQL agent</p>
+          <pre class="terminal-body" aria-hidden="true"><code data-query>SELECT review_score, COUNT(*) FROM orders GROUP BY 1;</code><span class="term-line">validated with sqlparse</span><span class="term-line">read-only role</span><span class="term-line">logged</span></pre>
+        </div>
+
+        <ul class="chips" aria-label="Technologies">
+          <li>PostgreSQL</li>
+          <li>Python</li>
+          <li>pandas</li>
+          <li>SQLAlchemy</li>
+          <li>SciPy</li>
+          <li>Excel</li>
+          <li>Power BI</li>
+          <li>Jupyter</li>
+          <li>pytest</li>
+          <li>LLM APIs</li>
+        </ul>
+        <p class="project-links">
+          <!-- TODO: replace GitHub URL -->
+          <a href="#">GitHub</a>
+          <!-- TODO: replace Live demo URL -->
+          <a href="#">Live demo</a>
+        </p>
+      </article>
+
+      <!-- Project: AquaShield Waterproofing Platform -->
+      <article class="project reveal">
+        <p class="kicker">Full-Stack Web App</p>
+        <h3>AquaShield Waterproofing Platform</h3>
+        <p class="summary">Customer, partner, and admin workflows for a waterproofing company, on one backend.</p>
+        <figure class="diagram">
+          <svg class="flow" viewBox="0 0 720 168" role="img" aria-label="Workflow from enquiry to warranty, with partner referral and commission">
+            <rect class="flow-box" x="8" y="28" width="150" height="64" rx="6"/>
+            <text class="flow-label" x="83" y="66">Enquiry</text>
+            <rect class="flow-box" x="192" y="28" width="150" height="64" rx="6"/>
+            <text class="flow-label" x="267" y="66">Work order</text>
+            <rect class="flow-box" x="376" y="28" width="150" height="64" rx="6"/>
+            <text class="flow-label" x="451" y="58">Payment</text>
+            <text class="flow-label" x="451" y="78">and GST</text>
+            <rect class="flow-box" x="560" y="28" width="150" height="64" rx="6"/>
+            <text class="flow-label" x="635" y="66">Warranty</text>
+            <path class="flow-arrow" d="M158 60 H192 M342 60 H376 M526 60 H560"/>
+            <rect class="flow-box flow-box-soft" x="192" y="112" width="334" height="44" rx="6"/>
+            <text class="flow-label" x="359" y="140">Partner referral and commission</text>
+          </svg>
+          <figcaption>Enquiry-to-warranty flow, plus the partner program</figcaption>
+        </figure>
+        <dl class="case">
+          <div>
+            <dt>Problem</dt>
+            <dd>A waterproofing company needed enquiry-to-warranty workflows and a partner referral program in one system.</dd>
+          </div>
+          <div>
+            <dt>Approach</dt>
+            <dd>Customer/partner site and admin panel on one Supabase backend. Security enforced with PostgreSQL Row Level Security, private storage with signed URLs, and SQL triggers for payment checks, GST totals and commissions. Built with AI-assisted development: I owned requirements, architecture and review; an AI assistant generated code and ran SQL tests on local PostgreSQL.</dd>
+          </div>
+          <div>
+            <dt>Result</dt>
+            <dd>Deployed on Vercel with demo data. Not yet tested with real users.</dd>
+          </div>
+        </dl>
+        <ul class="chips" aria-label="Technologies">
+          <li>JavaScript</li>
+          <li>HTML/CSS</li>
+          <li>PostgreSQL</li>
+          <li>Supabase (Auth, RLS, Storage)</li>
+          <li>SQL triggers</li>
+          <li>Vercel</li>
+          <li>Git</li>
+        </ul>
+        <p class="project-links">
+          <!-- TODO: replace GitHub URL -->
+          <a href="#">GitHub</a>
+          <!-- TODO: replace Live demo URL -->
+          <a href="#">Live demo</a>
+        </p>
+      </article>
+
+      <!-- Project: Achievement & Rewards Tracker -->
+      <article class="project reveal">
+        <p class="kicker">Pronet Solutions</p>
+        <h3>Achievement &amp; Rewards Tracker</h3>
+        <p class="summary">Internal path from achievement submission to admin approval and point-based rewards.</p>
+        <figure class="diagram diagram-brand">
+          <img class="brand-logo" src="images/pronet-logo.svg" width="96" height="96" alt="Pronet Solutions logo">
+          <svg class="flow" viewBox="0 0 560 120" role="img" aria-label="Achievement submitted, verified by an admin, then scored into rewards">
+            <rect class="flow-box" x="8" y="28" width="150" height="64" rx="6"/>
+            <text class="flow-label" x="83" y="58">Submit</text>
+            <text class="flow-label" x="83" y="78">achievement</text>
+            <rect class="flow-box" x="204" y="28" width="150" height="64" rx="6"/>
+            <text class="flow-label" x="279" y="58">Admin</text>
+            <text class="flow-label" x="279" y="78">verifies</text>
+            <rect class="flow-box" x="400" y="28" width="150" height="64" rx="6"/>
+            <text class="flow-label" x="475" y="58">Points and</text>
+            <text class="flow-label" x="475" y="78">rewards</text>
+            <path class="flow-arrow" d="M158 60 H204 M354 60 H400"/>
+          </svg>
+          <figcaption>Submission, verification, and the reward engine</figcaption>
+        </figure>
+        <dl class="case">
+          <div>
+            <dt>Problem</dt>
+            <dd>An internal system for employees to submit achievements and for admins to verify them.</dd>
+          </div>
+          <div>
+            <dt>Approach</dt>
+            <dd>Designed the workflow and logic: screenshot-upload submissions, admin verification and approval, and a point-based reward engine that scores verified achievements and tracks cumulative rewards. Directed AI-assisted development (ChatGPT, Claude) while owning architecture and feature decisions.</dd>
+          </div>
+          <div>
+            <dt>Result</dt>
+            <dd>Working internal workflow from submission to approved rewards.</dd>
+          </div>
+        </dl>
+        <ul class="chips" aria-label="Technologies">
+          <li>Next.js</li>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Supabase</li>
+          <li>Tailwind CSS</li>
+        </ul>
+        <p class="project-links">
+          <!-- TODO: replace GitHub URL -->
+          <a href="#">GitHub</a>
+          <!-- TODO: replace Live demo URL -->
+          <a href="#">Live demo</a>
+        </p>
+      </article>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section wrap" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="reveal">Skills</h2>
+      <div class="skill-board">
+      <div class="skill-group">
+        <h3 class="reveal">Data &amp; Analytics</h3>
+        <ul class="tags">
+          <li class="tag">Power BI (dashboards, KPIs)</li>
+          <li class="tag">MS Excel</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 class="reveal">Programming</h3>
+        <ul class="tags">
+          <li class="tag">SQL</li>
+          <li class="tag">Python (pandas)</li>
+          <li class="tag">Java</li>
+          <li class="tag">JavaScript (DOM, ES6+)</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 class="reveal">Databases</h3>
+        <ul class="tags">
+          <li class="tag">PostgreSQL</li>
+          <li class="tag">Supabase</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 class="reveal">Generative AI</h3>
+        <ul class="tags">
+          <li class="tag">Prompt engineering</li>
+          <li class="tag">ChatGPT</li>
+          <li class="tag">Claude</li>
+          <li class="tag">LLMs</li>
+          <li class="tag">AI-assisted data analysis</li>
+          <li class="tag">responsible AI use</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 class="reveal">Web &amp; Frameworks</h3>
+        <ul class="tags">
+          <li class="tag">HTML/CSS</li>
+          <li class="tag">Next.js</li>
+          <li class="tag">React</li>
+          <li class="tag">Tailwind CSS</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 class="reveal">Tools</h3>
+        <ul class="tags">
+          <li class="tag">Git/GitHub</li>
+          <li class="tag">Jupyter Notebook</li>
+          <li class="tag">Vercel</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3 class="reveal">Problem solving</h3>
+        <ul class="tags">
+          <li class="tag">100+ Java DSA problems (arrays, strings, recursion)</li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <div class="wrap split">
+    <section id="education" class="section" aria-labelledby="education-title">
+      <h2 id="education-title" class="reveal">Education</h2>
+      <ul class="lines reveal">
+        <li>B.Tech, Computer Science &amp; Engineering, Indore Institute of Science &amp; Technology, 2022 to 2026</li>
+        <li>Class XII (ISC), Christ Church School, Jabalpur, 2022</li>
+        <li>Class X (ICSE), Christ Church School, Jabalpur, 2020</li>
+      </ul>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section" aria-labelledby="certifications-title">
+      <h2 id="certifications-title" class="reveal">Certifications</h2>
+      <ul class="lines reveal">
+        <li>Microsoft Power BI Desktop for Business Intelligence, Maven Analytics (Udemy), Sep 2026</li>
+        <li>The Complete AI Guide: ChatGPT, Claude &amp; Generative AI, Udemy, Sep 2026</li>
+        <li>Google AI Essentials, Google (Coursera), Aug 2026</li>
+        <li>Google Prompting Essentials, Google (Coursera), Aug 2026</li>
+      </ul>
+    </section>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="section wrap" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="reveal">Contact</h2>
+      <div class="contact-card reveal">
+        <p>Open to data analyst and junior analytics roles.</p>
+        <p><a href="mailto:garvshuklaa0326@gmail.com">garvshuklaa0326@gmail.com</a></p>
+        <ul class="inline-links">
+          <li>
+            <a href="https://www.linkedin.com/in/garv-shukla/">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://github.com/garv0312/">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>&copy; <span id="year">2026</span> Garv Raj Shukla</p>
+    <p class="photo-credit">Background photos from Unsplash.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
