@@ -653,6 +653,25 @@ body::after {
   margin-top: 0.95rem;
 }
 
+.project-featured {
+  border-color: var(--accent);
+}
+
+.outcomes {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.outcomes li + li {
+  margin-top: 0.35rem;
+}
+
+.note {
+  margin-top: 0.9rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .skill-board {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -73,6 +73,56 @@
     <section id="projects" class="section wrap" aria-labelledby="projects-title">
       <h2 id="projects-title" class="reveal">Projects</h2>
 
+      <!-- Project: Marketing Attribution & ROI Intelligence -->
+      <article class="project project-featured reveal">
+        <p class="kicker">Featured · Data Analytics</p>
+        <h3>Marketing Attribution &amp; ROI Intelligence</h3>
+        <p class="summary">An end-to-end marketing attribution analytics project that compares last-touch, linear, and time-decay attribution using Python, DuckDB SQL, and Power BI.</p>
+        <figure class="diagram">
+          <svg class="flow" viewBox="0 0 720 120" role="img" aria-label="Three attribution models: last-touch, linear, and 7-day time-decay">
+            <rect class="flow-box" x="8" y="28" width="210" height="64" rx="6"/>
+            <text class="flow-label" x="113" y="66">Last-touch</text>
+            <rect class="flow-box" x="254" y="28" width="210" height="64" rx="6"/>
+            <text class="flow-label" x="359" y="66">Linear</text>
+            <rect class="flow-box" x="500" y="28" width="210" height="64" rx="6"/>
+            <text class="flow-label" x="605" y="58">7-day</text>
+            <text class="flow-label" x="605" y="78">time-decay</text>
+          </svg>
+          <figcaption>Same journeys, three ways of assigning campaign credit</figcaption>
+        </figure>
+        <dl class="case">
+          <div>
+            <dt>Problem</dt>
+            <dd>Compare how last-touch, linear, and time-decay assign credit across campaigns, without treating transformed Criteo costs as real money.</dd>
+          </div>
+          <div>
+            <dt>Approach</dt>
+            <dd>Built Python data preparation, DuckDB SQL models, and automated validations, then a three-page Power BI dashboard: Executive Overview, Attribution Model Comparison, and Journey Diagnostics.</dd>
+          </div>
+          <div>
+            <dt>Result</dt>
+            <dd>
+              <ul class="outcomes">
+                <li>Processed 16,468,027 Criteo ad-impression records and 438,730 conversion journeys across 675 campaigns.</li>
+                <li>Compared last-touch, linear, and 7-day time-decay attribution on those journeys.</li>
+                <li>Identified campaign-credit shifts across models and analyzed multi-campaign conversion paths.</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+        <p class="note">ROI metrics are scenario-based sensitivity outputs; transformed dataset cost is not real currency, revenue, or ROAS.</p>
+        <ul class="chips" aria-label="Technologies">
+          <li>Python</li>
+          <li>DuckDB</li>
+          <li>SQL</li>
+          <li>Power BI</li>
+          <li>Attribution Modeling</li>
+        </ul>
+        <p class="project-links">
+          <a class="btn btn-primary" href="https://github.com/garv0312/marketing-attribution-roi-intelligence">GitHub <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        </p>
+      </article>
+
       <!-- Project: Olist WBR Command Center -->
       <article class="project reveal">
         <p class="kicker">Data Analytics</p>
